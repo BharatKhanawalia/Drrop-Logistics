@@ -6,4 +6,11 @@
 **Check out the website:** https://drrop.netlify.app
 
 ## About
-A simple static website built with **HTML, CSS, JavaScript, and Bootstrap** for a logistics startup namely **'Drrop'**. It contains a **Contact Us Form** which is built using **Firebase Realtime Database** as the database service and linked with a mailing service to receive the filled forms directly on a specified email address (preferrably the official email address of Drrop).
+A simple static website for a logistics startup namely **'Drrop'**. It contains a **Contact Us Form** which is linked with a mailing service to receive the filled forms directly on a specified email address (preferrably the official email address of Drrop).
+
+- **Technology Stack:**
+  - HTML
+  - CSS
+  - JavaScript
+  - Bootstrap
+  - Firebase Realtime Database
