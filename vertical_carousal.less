@@ -1,0 +1,77 @@
+.square(@a) {
+  width: @a;
+  height: @a;
+}
+
+.circle(@diameter) {
+  .square(@diameter);
+  border-radius: 50%;
+}
+
+.vertical-carousel {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.vertical-carousel-box {
+  &, .item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .item {
+    overflow: hidden;
+  }
+}
+
+.vertical-carousel-indicators {
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  right: 30px;
+  text-align: center;
+  padding: 0;
+  margin: -40px 0 0 0;
+  li {
+    display: block;
+    position: relative;
+    z-index: 1001;
+    list-style: none;
+    cursor: pointer;
+    .square(20px);
+    padding: 5px;
+    &:before {
+      content: '';
+      -webkit-transition: all 0.1s;
+      -moz-transition: all 0.1s;
+      -ms-transition: all 0.1s;
+      -o-transition: all 0.1s;
+      transition: all 0.1s;
+      display: block;
+      position: absolute;
+      .circle(4px);
+      left: 50%;
+      top: 50%;
+      margin: -2px 0 0 -2px;
+      background: #ffffff;
+    }
+    &:hover:before {
+      .circle(9px);
+      margin: -4px 0 0 -4px;
+    }
+    &.active:before {
+      .circle(10px);
+      margin: -5px 0 0 -5px;
+    }
+  }
+}
+
+.vertical-carousel-box {
+  -webkit-transition: transform 600ms;
+  -moz-transition: transform 600ms;
+  -ms-transition: transform 600ms;
+  -o-transition: transform 600ms;
+  transition: transform 600ms;
+}

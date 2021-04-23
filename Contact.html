@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Drrop</title>
+<link rel="stylesheet" type="text/css" href="Contact.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<!--------------------------------Header / Navbar------------------------------------------>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-black fixed-top blurry">
+  <div class="blur"></div>
+  <div class="container-fluid">
+  <a class="navbar-brand" href="index.html">Drrop</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+  <ul class="navbar-nav ml-auto w-100 justify-content-end">
+  <li class="nav-item active">
+  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="About.html">About</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="Services.html">Services</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="Vehicles.html">Vehicles</a>
+  </li>
+  <!--<li class="nav-item">
+  <a class="nav-link disabled" href="Team.html">Team</a>
+  </li>-->
+  <li class="nav-item">
+  <a class="nav-link" href="Contact.html">Contact</a>
+  </li>
+  </ul>
+  </div>
+  </div>
+
+  </nav>
+
+  <!--------------------------------Header / Navbar------------------------------------------>
+
+<!----------------------------------------Content-------------------------------------------->
+
+<section id="addr">
+  
+  <h1 class="heading">Contact Us</h1>
+  <div class=bbody>
+    
+    <div class="ccontainer1" id="lct">
+      <div class="icon" style="color:black; font-size:2.5em; text-align: center; margin-bottom:1vh!important;">
+        <i class="fa fa-location-arrow"></i>
+        </div>
+      <h3 style="color:black; font-size:2vh; text-align:center">Location</h3>
+      <p style="color:black; font-size:1.6vh; text-align:center">New Delhi, India</p>
+    </div>
+    <div class="ccontainer2" id="mb">
+      <div class="icon" style="color:black; font-size:2.5em; text-align: center; margin-bottom:1vh!important;">
+        <i class="fa fa-mobile"></i>
+        </div> 
+        <h3 style="color:black; font-size:2vh; text-align:center">Phone</h3>
+        <p style="color:black; font-size:1.6vh; text-align:center">+91 123456789</p>
+    </div>
+    <div class="ccontainer3" id="eml">
+      <div class="icon" style="color:black; font-size:2.5em; text-align: center; margin-bottom:1vh!important;">
+        <i class="fa fa-envelope"></i>
+        </div>
+        <h3 style="color:black; font-size:2vh; text-align:center">Email</h3>
+        <p style="color:black; font-size:1.6vh; text-align:center">bharatkumar7070@gmail.com</p>
+    </div>
+    
+    <div class="ccontainer4" id="scl">
+      <div class="icon" style="color:black; font-size:2.5em; text-align:center; margin-bottom:1vh!important;">
+        <i class="fa fa-link"></i>
+        </div>
+          <h3 style="color:black; font-size:2vh; text-align:center">Social Media</h3>
+          <a id="fb" href="#">
+          <i class="fa fa-facebook-f"></i>
+          </a>
+          <a id="tw" href="#">
+          <i class="fa fa-twitter"></i>
+          </a>
+          <a id="gl" href="#">
+          <i class="fa fa-google"></i>
+          </a>
+          <a id="ig" href="#">
+          <i class="fa fa-instagram"></i>
+          </a>
+          <a id="yt" href="#">
+          <i class="fa fa-youtube-play"></i>
+          </a>
+        </div>
+    
+  </div>
+</section>
+<div class="box">
+<h2>Get in Touch</h2>
+<form id="contactForm">
+<div class="ddiv">
+<input type="text" name="name" id="name" required>
+<label class="llabel">Name</label>
+</div>
+<div class="ddiv">
+<input type="email" name="email" id="email" required>
+<label class="llabel">Email</label>
+</div>
+<div class="ddiv">
+<input type="tel" name="phone" id="phone" required>
+<label class="llabel">Phone Number</label>
+</div>
+<div class="ddiv">
+<textarea name="message" id="message" required></textarea>
+<label class="llabel">Message</label>
+</div>
+<div class="bcontainer">
+  <button class="butonn btn3"type="submit">Submit</button>
+</div>
+</form>
+</div>
+
+<!----------------------------------------Content-------------------------------------------->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script>
+  $(".btn3").click(function(){
+    var name = $ ("#name").val();
+    var email = $ ("#email").val();
+    var phone = $ ("#phone").val();
+    var message = $ ("#message").val();
+
+    if(name  == '' || email == '' || phone == '' || message == ''){
+
+      swal({
+        title:"Fields Empty!",
+        text: "Please check the missing fields!",
+        icon: "warning",
+        button: "Ok",
+      });
+    }else{
+      swal({
+	  title: "😃",
+	  text: "Thank You for contacting us",
+	  icon: "success",
+	})
+    }
+  })
+</script>
+
+
+<!----------------------------------------Content-------------------------------------------->
+
+<!-------------------------------------Footer---------------------------------------------->
+<!----
+<footer>
+  <div class="footer">      
+  <p>&copy; DRROP</p>
+  <div class="middle">
+  <a class="btn" href="#">
+  <i class="fa fa-facebook-f"></i>
+  </a>
+  <a class="btn" href="#">
+  <i class="fa fa-twitter"></i>
+  </a>
+  <a class="btn" href="#">
+  <i class="fa fa-google"></i>
+  </a>
+  <a class="btn" href="#">
+  <i class="fa fa-instagram"></i>
+  </a>
+  <a class="btn" href="#">
+  <i class="fa fa-youtube-play"></i>
+  </a>
+  </div>
+  <div class="ftr-links">
+  <ul class="footer-links">
+  <li class="footer_link"><a class="tc" href="#">Terms & Conditions</a></li>
+  </ul></div>
+  </div>
+  </footer>
+-->
+  <!-------------------------------------Footer--------------------------------------------->
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-database.js"></script>
+<script src="../main.js"></script>
+</body>
+</html>
+
+
