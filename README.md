@@ -6,7 +6,7 @@
 **Check out the website:** https://drrop.netlify.app
 
 ## About
-A simple static website for a logistics startup namely **'Drrop'**. It contains a **Contact Us Form** which is linked with a mailing service to receive the filled forms directly on a specified email address (preferrably the official email address of Drrop).
+A simple static website for a logistics startup namely **'Drrop'**. It also consists of a **Contact Us Form** which can be linked with a mailing service so that we can receive the filled forms directly on our specified email address (here, Drrop's offial mail).
 
 - **Technology Stack:**
   - HTML
